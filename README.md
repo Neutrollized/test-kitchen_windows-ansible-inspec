@@ -5,12 +5,19 @@ How to use the test-kitchen suite with Ansible and InSpec verification on Window
 
 ### Host
  Ansible >= 2.4.1 (but I would recommend using the latest as Windows support is constantly improving)
- Ruby >= 2.2
+
+Ruby >= 2.2
+
 need the following gems installed:
+
  test-kitchen
+
  kitchen-vagrant
+
  kitchen-inspec
+
  kitchen-ansiblepush
+
  winrm
 
 ## (Windows) Guest
