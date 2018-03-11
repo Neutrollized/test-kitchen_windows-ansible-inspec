@@ -1,0 +1,5 @@
+---
+- hosts: kitchen-windows
+
+  roles:
+  - role: win-test
