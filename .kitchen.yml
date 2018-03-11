@@ -13,7 +13,7 @@ platforms:
   - name: win2012r2
     driver_config:
       box: win2012r2
-      box_url: https://artifactory.corp.ad.ctc/artifactory/api/vagrant/vagrant-dev-local/win2012r2
+      box_url: ## YOUR VAGRANT BOX DOWNLOAD URL HERE ###
       box_download_insecure: true
       communicator: winrm
       username: packer
@@ -34,7 +34,7 @@ provisioner:
   name: ansible_push
   ansible_config: ansible.cfg
   playbook: test/integration/default/default.yml
-  verbose: vv
+  verbose: vvv
   mygroup: kitchen-windows
   diff: true
   host_key_checking: false

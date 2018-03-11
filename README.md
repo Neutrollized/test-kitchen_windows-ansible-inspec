@@ -21,3 +21,11 @@ My example uses the Windows 2012R2 Vagrant box I built using [this](https://gith
 ## How It Works
 
 The problem with Ansible on Windows is that it requires a Linux host to run your playbook from.  One option is to run 2 Vagrant boxes (1 Windows, 1 Linux) and have the Linux host run the playbook/role on your Windows host, but that's not very efficient (not to mention it causes problems when trying to verify because it tries to run verify on every platform you list in your .kitchen.yml).  The method I'm using one needs 1 Windows Vagrant box to be started and you will provision it using [kitchen-ansiblepush](https://github.com/ahelal/kitchen-ansiblepush) which runs the playbook from your localhost.
+
+AnsiblePush will generate an inventory file to use based on your settings that your provide, which is really neat!
+
+### NOTES
+
+You will notice the username is not the default 'vagrant' and that's because it's what I had set it to when I built my image using [Packer](www.packer.io), so you will probably need to change that accordingly.
+
+.kitchen.yml_2VMs contains a sample of what the .kitchen.yml might look like if you're using the 2 VMs method (InSpec verification doesn't work properly there yet)
