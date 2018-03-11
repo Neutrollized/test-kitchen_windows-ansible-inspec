@@ -12,7 +12,7 @@ driver:
 platforms:
   - name: win2012r2
     driver_config:
-      box: win2012r2
+      box: ## YOUR WINDOWS VAGRANT BOX NAME ###
       box_url: ## YOUR VAGRANT BOX DOWNLOAD URL HERE ###
       box_download_insecure: true
       communicator: winrm

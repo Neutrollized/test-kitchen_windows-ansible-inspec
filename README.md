@@ -34,5 +34,3 @@ AnsiblePush will generate an inventory file to use based on your settings that y
 ### NOTES
 
 You will notice the username is not the default 'vagrant' and that's because it's what I had set it to when I built my image using [Packer](www.packer.io), so you will probably need to change that accordingly.
-
-.kitchen.yml_2VMs contains a sample of what the .kitchen.yml might look like if you're using the 2 VMs method (InSpec verification doesn't work properly there yet)
