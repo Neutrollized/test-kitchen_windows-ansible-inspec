@@ -1,5 +1,5 @@
 # test-kitchen_windows-ansible-inspec
-How to use the test-kitchen suite with Ansible and InSpec verification on Windows
+How to use the test-kitchen suite with Ansible and InSpec verification on Windows guest
 
 ## Requirements
 
@@ -18,7 +18,9 @@ need the following gems installed:
 
  kitchen-ansiblepush
 
- winrm
+ [pywinrm](https://pypi.python.org/pypi/pywinrm)
+ 
+ which (yes, if you're installing it on a small Docker image or something, make sure it has the `which` command)
 
 ## (Windows) Guest
 Make sure [ConfigureRemotingForAnsible.ps1](https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1) is run on your Windows guest so configure WinRM over SSL
