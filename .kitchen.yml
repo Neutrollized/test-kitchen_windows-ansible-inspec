@@ -39,7 +39,6 @@ provisioner:
   host_key_checking: false
   ansible_connection: winrm
   ansible_port: 55986
-  ansible_diff: true
   generate_inv: true
   use_instance_name: false
   chef_bootstrap_url: nil
