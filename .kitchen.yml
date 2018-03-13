@@ -32,7 +32,7 @@ transport:
 
 provisioner:
   name: ansible_push
-  ansible_config: ansible.cfg
+  ansible_config: test/integration/default/ansible.cfg
   playbook: test/integration/default/default.yml
   verbose: vvv
   mygroup: kitchen-windows
