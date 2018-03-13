@@ -32,8 +32,7 @@ transport:
 
 provisioner:
   name: ansible_push
-  ansible_config: test/integration/default/ansible.cfg
-  playbook: test/integration/default/default.yml
+  ansible_config: test/ansible.cfg
   verbose: vvv
   mygroup: kitchen-windows
   diff: true
@@ -54,3 +53,5 @@ verifier:
 
 suites:
   - name: default
+    provisioner:
+      playbook: test/integration/default/default.yml
