@@ -11,6 +11,7 @@ driver:
 
 platforms:
   - name: win2012r2
+    os_type: windows
     driver_config:
       box: ## YOUR WINDOWS VAGRANT BOX NAME ###
       box_url: ## YOUR VAGRANT BOX DOWNLOAD URL HERE ###
